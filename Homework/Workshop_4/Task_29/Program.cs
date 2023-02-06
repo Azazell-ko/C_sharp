@@ -8,11 +8,12 @@
 
 void FillArray(int[] collection)
 {
+    var random = new Random(); 
     int lenght = collection.Length;
     int index = 0;
     while (index < lenght)
     {
-        collection[index] = new Random().Next(1, 10);
+        collection[index] = random.Next(1, 10);
         index++;
     }
 }
